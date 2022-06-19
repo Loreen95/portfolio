@@ -1,4 +1,5 @@
 /*  import google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 * {
@@ -12,7 +13,9 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* custom scroll bar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -29,6 +32,7 @@ html {
     background: #555;
 }
 
+
 /* all similar content styling codes */
 
 section {
@@ -41,8 +45,7 @@ section {
     margin: auto;
 }
 
-.over,
-.educatie,
+.about,
 .services,
 .skills,
 .teams,
@@ -51,8 +54,7 @@ footer {
     font-family: 'Poppins', sans-serif;
 }
 
-.over .over-content,
-.educatie .educatie-content,
+.about .about-content,
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content {
@@ -89,14 +91,13 @@ section .title::after {
     left: 50%;
     font-size: 20px;
     color: rgb(97, 20, 223);
-    ;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
 }
 
 
-/****************************NAVBARSECTIE*****************************/
+/* navbar styling */
 
 .navbar {
     position: fixed;
@@ -110,7 +111,6 @@ section .title::after {
 .navbar.sticky {
     padding: 15px 0;
     background: rgb(97, 20, 223);
-    ;
 }
 
 .navbar .max-width {
@@ -127,7 +127,6 @@ section .title::after {
 
 .navbar .logo a span {
     color: rgb(97, 20, 223);
-    ;
     transition: all 0.3s ease;
 }
 
@@ -151,14 +150,15 @@ section .title::after {
 
 .navbar .menu li a:hover {
     color: rgb(97, 20, 223);
-    ;
 }
 
 .navbar.sticky .menu li a:hover {
     color: #fff;
 }
 
+
 /* menu btn styling */
+
 .menu-btn {
     color: #fff;
     font-size: 23px;
@@ -171,7 +171,6 @@ section .title::after {
     height: 45px;
     width: 42px;
     background: rgb(97, 20, 223);
-    ;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -198,11 +197,11 @@ section .title::after {
 }
 
 
-/****************************HOMESECTIE*****************************/
+/* home section styling */
 
 .home {
     display: flex;
-    background-image: url("../images/lhakhoff.jpg");
+    background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-color: rgb(36, 31, 25);
@@ -238,14 +237,12 @@ section .title::after {
 
 .home .home-content .text-3 span {
     color: rgb(97, 20, 223);
-    ;
     font-weight: 500;
 }
 
 .home .home-content a {
     display: inline-block;
     background: rgb(97, 20, 223);
-    ;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -253,56 +250,53 @@ section .title::after {
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid rgb(97, 20, 223);
-    ;
     transition: all 0.3s ease;
 }
 
 .home .home-content a:hover {
     color: rgb(97, 20, 223);
-    ;
     background: none;
 }
 
 
-/****************************OVERSECTIE******************************/
+/* about section styling */
 
-.over .title::after {
-    content: "who i am";
+.about .title::after {
+    content: "wie ik ben";
 }
 
-.over .over-content .left {
+.about .about-content .left {
     width: 45%;
 }
 
-.over .over-content .left img {
+.about .about-content .left img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.over .over-content .right {
+.about .about-content .right {
     width: 55%;
 }
 
-.over .over-content .right .text {
+.about .about-content .right .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.over .over-content .right .text span {
+.about .about-content .right .text span {
     color: rgb(97, 20, 223);
 }
 
-.over .over-content .right p {
+.about .about-content .right p {
     text-align: justify;
 }
 
-.over .over-content .right a {
+.about .about-content .right a {
     display: inline-block;
     background: rgb(97, 20, 223);
-    ;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -310,36 +304,35 @@ section .title::after {
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid rgb(97, 20, 223);
-    ;
     transition: all 0.3s ease;
 }
 
-.over .over-content .right a:hover {
+.about .about-content .right a:hover {
     color: rgb(97, 20, 223);
     background: none;
 }
 
-/****************************EDUCATIESECTIE*****************************/
-.educatie .title::after {
-    content: "mijn;
 
-}
+/* services section styling */
 
-.educatie {
+.services,
+.teams {
     color: #fff;
     background: #111;
 }
 
-.educatie .title::before {
+.services .title::before,
+.teams .title::before {
     background: #fff;
 }
 
-.educatie .title::after {
+.services .title::after,
+.teams .title::after {
     background: #111;
     content: "what i provide";
 }
 
-.educatie .educatie-content .card {
+.services .serv-content .card {
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -349,97 +342,8 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.educatie .educatie-content .card:hover {
-    background: rgb(97, 20, 223);
-    ;
-}
-
-.educatie .educatie-content .card .box {
-    transition: all 0.3s ease;
-}
-
-.educatie .educatie-content .card:hover .box {
-    transform: scale(1.05);
-}
-
-.educatie .educatie-content .card i {
-    font-size: 50px;
-    color: rgb(97, 20, 223);
-    ;
-    transition: color 0.3s ease;
-}
-
-.educatie .educatie-content .card:hover i {
-    color: #fff;
-}
-
-.educatie .educatie-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-table,
-td {
-    table-layout: fixed;
-    border-collapse: collapse;
-    border: 3px solid rgb(97, 20, 223);
-    width: 100%;
-    text-align: center;
-}
-
-thead th:nth-child(1) {
-    width: 5%;
-    border: 3px solid rgb(97, 20, 223);
-}
-
-thead th:nth-child(2) {
-    width: 5%;
-    border: 3px solid rgb(97, 20, 223);
-}
-
-thead th:nth-child(3) {
-    width: 10%;
-    border: 3px solid rgb(97, 20, 223);
-}
-
-thead th:nth-child(4) {
-    width: 30%;
-    border: 3px solid rgb(97, 20, 223);
-    text-align: center;
-}
-
-/****************************SERVICESSECTIE*****************************/
-
-.services {
-    color: #111;
-    background: #fff;
-}
-
-.services .title::before,
-.teams .title::before {
-    background: #111;
-}
-
-.services .title::after,
-.teams .title::after {
-    background: #fff;
-    content: "what i provide";
-}
-
-.services .serv-content .card {
-    width: calc(33% - 20px);
-    background: lightgrey;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
 .services .serv-content .card:hover {
     background: rgb(97, 20, 223);
-    ;
 }
 
 .services .serv-content .card .box {
@@ -453,7 +357,6 @@ thead th:nth-child(4) {
 .services .serv-content .card i {
     font-size: 50px;
     color: rgb(97, 20, 223);
-    ;
     transition: color 0.3s ease;
 }
 
@@ -467,129 +370,208 @@ thead th:nth-child(4) {
     margin: 10px 0 7px 0;
 }
 
-/****************************SKILLSSECTIE*****************************/
 
-.skills {
-    color: #fff;
-    background: #111;
-}
-
-.skills .title::before {
-    background: #fff;
-}
-
+/* skills section styling */
 .skills .title::after {
-    background: #111;
-    content: "what i know";
+    content: "Ontwikkelde skills over de jaren heen";
 }
 
-.skills .skills-content .column {
-    width: calc(50% - 30px);
+#bars {
+    margin: 6em auto;
+    max-width: 960px;
+    overflow: hidden;
 }
 
-.skills .skills-content .left .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.bar {
+    float: left;
+    width: 20%;
+    text-align: center;
 }
 
-.skills .skills-content .left p {
-    text-align: justify;
+.bar h3 {
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
 }
 
-.skills .skills-content .left a {
+.bar-circle {
+    display: block;
+    margin: 0.7em auto;
+}
+
+h3 {
     display: inline-block;
-    background: rgb(97, 20, 223);
-    color: #111;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+#names {
+    text-align: center;
+}
+
+.bactive {
+    border-bottom: 5px solid rgb(97, 20, 223);
+    font-weight: 800;
+}
+
+.sbar {
+    display: none;
+}
+
+/* teams section styling */
+
+.teams .title::after {
+    content: "Gemaakte Projecten door de periodes heen";
+}
+
+.teams .carousel .card {
+    background: #222;
     border-radius: 6px;
-    border: 2px solid rgb(97, 20, 223);
-    ;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 
-.skills .skills-content .left a:hover {
-    color: rgb(97, 20, 223);
-    ;
-    background: none;
+.teams .carousel .card:hover {
+    background: blue;
 }
 
-.skills .skills-content .right .bars {
-    margin-bottom: 15px;
-}
-
-.skills .skills-content .right .info {
+.teams .carousel .card .box {
     display: flex;
-    margin-bottom: 5px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.skills .skills-content .right span {
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.teams .carousel .card .text {
+    font-size: 25px;
     font-weight: 500;
-    font-size: 18px;
+    margin: 10px 0 7px 0;
 }
 
-.skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
+.teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid aqua;
+    transition: all 0.3s ease;
 }
 
-.skills .skills-content .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: var(--my-color-var);
+.teams .carousel .card:hover img {
+    border-color: rgb(97, 20, 223);
 }
 
-.skills-content .right .html::before {
-    width: 90%;
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.skills-content .right .css::before {
-    width: 75%;
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(97, 20, 223) !important;
+    transition: all 0.3s ease;
 }
 
-.skills-content .right .cs::before {
-    width: 80%;
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
 }
 
-.skills-content .right .php::before {
-    width: 70%;
+.owl-dot.active,
+.owl-dot:hover {
+    background: rgb(97, 20, 223) !important;
 }
 
-.skills-content .right .mysql::before {
-    width: 70%;
+.teams .title::after {
+    content: "Gemaakte Projecten door de periodes heen";
 }
 
-/****************************PROJECTSECTIE*****************************/
+.teams .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
 
-.projecten .title::after {
-    content: "enkele projecten";
+.teams .carousel .card:hover {
+    background: blue;
+}
+
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.teams .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(97, 20, 223);
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img {
+    border-color: rgb(97, 20, 223)
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(97, 20, 223) !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: rgb(97, 20, 223) !important;
 }
 
 
-/****************************CONTACTSECTIE*****************************/
-
-.contact {
-    color: #fff;
-    background: #111;
-}
-
-.contact .title::before {
-    background: #fff;
-}
+/* contact section styling */
 
 .contact .title::after {
-    background: #111;
-    content: "get in touch";
+    content: "stuur een bericht";
 }
 
 .contact .contact-content .column {
@@ -623,7 +605,6 @@ thead th:nth-child(4) {
 .contact .contact-content .row i {
     font-size: 25px;
     color: rgb(97, 20, 223);
-    ;
 }
 
 .contact .contact-content .info .head {
@@ -631,7 +612,7 @@ thead th:nth-child(4) {
 }
 
 .contact .contact-content .info .sub-title {
-    color: lightgrey;
+    color: #333;
 }
 
 .contact .right form .fields {
@@ -694,19 +675,17 @@ thead th:nth-child(4) {
     cursor: pointer;
     flex-wrap: nowrap;
     background: rgb(97, 20, 223);
-    ;
     border: 2px solid rgb(97, 20, 223);
-    ;
     transition: all 0.3s ease;
 }
 
 .right form .button-area button:hover {
     color: rgb(97, 20, 223);
-    ;
     background: none;
 }
 
-/****************************FOOTERSECTIE*****************************/
+
+/* footer section styling */
 
 footer {
     background: #111;
@@ -717,7 +696,6 @@ footer {
 
 footer span a {
     color: rgb(97, 20, 223);
-    ;
     text-decoration: none;
 }
 
@@ -725,10 +703,11 @@ footer span a:hover {
     text-decoration: underline;
 }
 
-/***************************MEDIAQUERYSECTIE***************************/
+
+/* responsive media query start */
 
 @media (max-width: 1104px) {
-    .over .over-content .left img {
+    .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
@@ -793,17 +772,17 @@ footer span a:hover {
         max-width: 930px;
     }
 
-    .over .over-content .column {
+    .about .about-content .column {
         width: 100%;
     }
 
-    .over .over-content .left {
+    .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
 
-    .over .over-content .right {
+    .about .about-content .right {
         flex: 100%;
     }
 
@@ -850,7 +829,7 @@ footer span a:hover {
         font-size: 27px;
     }
 
-    .over .over-content .right .text,
+    .about .about-content .right .text,
     .skills .skills-content .left .text {
         font-size: 19px;
     }
