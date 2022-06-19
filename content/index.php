@@ -357,7 +357,7 @@ $skills = $results->fetch_all(MYSQLI_ASSOC);
     </section>
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://www.codingnepalweb.com">CodingNepal</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+        <span>Created By Lisa Hakhoff, using <a href="https://www.codingnepalweb.com">CodingNepal</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
 
     <script src="../assets/scripts/scripts.js"></script>
